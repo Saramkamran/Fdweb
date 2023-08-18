@@ -10,7 +10,7 @@
 	<title>Single Product</title>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon_io\android-chrome-192x192.png">
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -31,16 +31,12 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<link rel="stylesheet" href="assets\css\sty.css">
+
 </head>
 <body>
 	
-	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
-        </div>
-    </div>
-    <!--PreLoader Ends-->
+
 	
 	<!-- header -->
 	<div class="top-header-area" id="sticker">
@@ -48,43 +44,21 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 text-center">
 					<div class="main-menu-wrap">
-						<!-- logo -->
-						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logo.png" alt="">
-							</a>
-						</div>
-						<!-- logo -->
+						
 
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li><a href="index.html">Home</a>
+									
 								</li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
-								</li>
+
 								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+									
 								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
+								<li ><a href="contact.html">Contact</a></li>
+								<li class="current-list-item"><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
 										<li><a href="checkout.html">Check Out</a></li>
@@ -149,9 +123,56 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<div class="single-product-img">
-						<img src="assets/img/products/product-img-5.jpg" alt="">
+					<img id=featured src="assets\img\gold 14 pro max.jpg">
+					<div id="slide-wrapper" >
+						<i class="fa-solid fa-arrow-left"></i>
+		
+						<div id="slider">
+							<img class="thumbnail active" src="assets\img\gold 14 pro max.jpg">
+							<img class="thumbnail" src="assets\img\iphone-14-pro-and-max-deep-purple-png-11662587434zacaxkb4sd.png">
+							<img class="thumbnail" src="assets\img\iphone-14-pro-and-max-deep-purple-png-11662587434zacaxkb4sd.png">
+
+							<img class="thumbnail" src="assets\img\iphone-14-pro-and-max-deep-purple-png-11662587434zacaxkb4sd.png">
+							<img class="thumbnail" src="assets\img\iphone-14-pro-and-max-deep-purple-png-11662587434zacaxkb4sd.png">
+		
+						</div>
+		
+						<i class="fa-solid fa-arrow-right"></i>
 					</div>
+					<script type="text/javascript">
+						let thumbnails = document.getElementsByClassName('thumbnail')
+				
+						let activeImages = document.getElementsByClassName('active')
+				
+						for (var i=0; i < thumbnails.length; i++){
+				
+							thumbnails[i].addEventListener('mouseover', function(){
+								console.log(activeImages)
+								
+								if (activeImages.length > 0){
+									activeImages[0].classList.remove('active')
+								}
+								
+				
+								this.classList.add('active')
+								document.getElementById('featured').src = this.src
+							})
+						}
+				
+				
+						let buttonRight = document.getElementById('slideRight');
+						let buttonLeft = document.getElementById('slideLeft');
+				
+						buttonLeft.addEventListener('click', function(){
+							document.getElementById('slider').scrollLeft -= 180
+						})
+				
+						buttonRight.addEventListener('click', function(){
+							document.getElementById('slider').scrollLeft += 180
+						})
+				
+				
+					</script>
 				</div>
 				<div class="col-md-7">
 					<div class="single-product-content">
@@ -179,80 +200,8 @@
 	</div>
 	<!-- end single product -->
 
-	<!-- more products -->
-	<div class="more-products mb-150">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-title">	
-						<h3><span class="orange-text">Related</span> Products</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 text-center">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
-						</div>
-						<h3>Strawberry</h3>
-						<p class="product-price"><span>Per Kg</span> 85$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 text-center">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
-						</div>
-						<h3>Berry</h3>
-						<p class="product-price"><span>Per Kg</span> 70$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 text-center">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
-						</div>
-						<h3>Lemon</h3>
-						<p class="product-price"><span>Per Kg</span> 35$ </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end more products -->
 
-	<!-- logo carousel -->
-	<div class="logo-carousel-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="logo-carousel-inner">
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/1.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/2.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/3.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/4.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/5.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end logo carousel -->
+	
 
 	<!-- footer -->
 	<div class="footer-area">
@@ -306,8 +255,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					<p>Copyrights &copy; 2019 - All Rights Reserved.<br>
+						Distributed By - 
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
@@ -346,6 +295,10 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="https://kit.fontawesome.com/d5256a6802.js" crossorigin="anonymous"></script>
+
+
+	
 
 </body>
 </html>

@@ -7,6 +7,10 @@
 	    font-size: 45px;
 	}
 
+	.hero-btn {
+		margin-top: ;
+	}
+
 	a.video-play-btn {
 		right: 51%;
 	}
@@ -55,6 +59,11 @@
 	.feature-bg:after {
 		display: none;
 	}
+
+
+	
+
+
 	.single-team-item {
 	    margin-bottom: 30px;
 	}
@@ -106,7 +115,7 @@
 	    width: 100%;
 	}
 	.site-logo a img {
-	    max-width: 150px;
+	    max-width: 60px;
 	}
 	.site-logo {
 	    text-align: center;
@@ -206,6 +215,19 @@
 
 	.site-logo img {
 	    max-width: 70px;
+	}
+
+	.single-homepage-slider 	
+	{
+
+		background-size: 360px 250px;
+
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		background-color: #000;
+
 	}
 
 	.responsive-menu-wrap {
@@ -383,6 +405,7 @@
 
 	.hero-btns {
 	    text-align: center;
+		margin-top: 100%;
 	}
 
 	.hero-btns a.bordered-btn {
@@ -565,6 +588,19 @@
 	    width: 380px;
 	    left: 50%;
 	    margin-left: -190px;
+	}
+
+	.single-homepage-slider 	
+	{
+
+		background-size: 160px 50px;
+
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		background-color: #000;
+
 	}
 
 	.hero-btns {
