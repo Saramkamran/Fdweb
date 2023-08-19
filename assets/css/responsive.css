@@ -8,7 +8,7 @@
 	}
 
 	.hero-btn {
-		margin-top: ;
+		margin-top: 0;
 	}
 
 	a.video-play-btn {
@@ -217,6 +217,7 @@
 	    max-width: 70px;
 	}
 
+
 	.single-homepage-slider 	
 	{
 
@@ -227,6 +228,7 @@
 		position: relative;
 		z-index: 1;
 		background-color: #000;
+		
 
 	}
 
