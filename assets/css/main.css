@@ -351,13 +351,17 @@ p:last-child {
 }
 
 .pt-100 {
-  padding-top: 0;
+  padding-top: 100px;
 }
+
+
 
 @media only screen and (max-width: 767.96px) {
   .pt-100 {
     padding-top: 40px;
   }
+
+
 }
 
 .pb-100 {
@@ -1962,6 +1966,46 @@ span.comment-date {
 # Cart Banner Styles
 
 ----------------------------------------------------------------------------- */
+
+.cart-banner1 {
+
+  background-color: white;
+
+}
+
+.homepage-bg-4 {
+  background-image:url(../img/bg12.png);
+}
+
+.single-homepage-slider2 {
+  background-size: 100% 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  background-color: #D71313;
+  height: 80%;
+}
+
+.image-c {
+
+  position: relative;
+  margin-top: 10%;
+  max-width: 50%;
+  max-height: 40%;
+}
+
+.content-c {
+ 
+  position: relative;
+  max-width: 50%;
+  max-height: 40%;  
+  margin-top: 10%;
+ 
+}
+
+
 .cart-banner {
   
   background-color: #fff;
