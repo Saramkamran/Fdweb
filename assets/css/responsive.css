@@ -214,9 +214,42 @@
 @media only screen and (max-width: 767px) {
 
 	.site-logo img {
-	    max-width: 70px;
+	    max-width: 50px;
+	}
+	
+	.p-co{
+		font-size: 1rem;
+		line-height: 1.5rem;
 	}
 
+	.image-c {
+		
+		float: right;
+        margin-top: 20%;
+		margin-right: 30%;	
+	}
+
+	.image-c img {
+		max-width: 140px;
+		max-height: 100%;
+		float: right;
+		
+		
+	}
+
+	.p-content {
+		font-size: 10px;
+	}
+	  
+
+	  .content-c {
+ 
+		position: relative;
+		max-width: 40%;
+		margin-top: 10%;
+		
+	   
+	  }
 
 	.single-homepage-slider 	
 	{

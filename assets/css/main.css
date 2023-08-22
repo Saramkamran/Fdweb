@@ -123,6 +123,8 @@ h4, .h4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
+
+  
 }
 
 h5, .h5 {
@@ -473,6 +475,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 
 .breadcrumb-bg {
   background-image: url(../img/watch.jpg);
+  
 }
 
 .breadcrumb-text p {
@@ -610,7 +613,14 @@ nav.main-menu > ul li:last-child {
 
 .site-logo {
   float: left;
-  max-width: 4.5%;
+  max-width:5.5%;
+}
+
+.ap1 {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  max-width: 30px;
 }
 
 
@@ -1984,22 +1994,37 @@ span.comment-date {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  background-color: #D71313;
+  background-color: transparent;
   height: 80%;
 }
 
+.p-co {
+  color: white ; font-family: open 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  font-weight: 100;
+   line-height: 2.5rem;
+   font-size: 2rem; 
+   
+}
+
+
+
+.ok{
+  padding-top: 15%;
+}
 .image-c {
 
   position: relative;
-  margin-top: 10%;
+  margin-top: -15%;
   max-width: 50%;
   max-height: 40%;
+  float: right;
+  margin-left: 60%;
 }
 
 .content-c {
  
   position: relative;
-  max-width: 50%;
+  max-width: 40%;
   max-height: 40%;  
   margin-top: 10%;
  
@@ -2272,7 +2297,8 @@ a.video-play-btn {
 ----------------------------------------------------------------------------- */
 .feature-bg {
   position: relative;
-  margin: 150px 0;
+  margin: 150px 200px;
+  max-width: 80%;
 }
 
 .oi {
@@ -2284,7 +2310,7 @@ a.video-play-btn {
 }
 
 .feature-bg:after {
-  background-image: url(../img/feature-bg.jpg);
+  background-image: url(../img/Asset\ 20.svg);
   position: absolute;
   right: 0;
   top: 0;
@@ -2294,8 +2320,7 @@ a.video-play-btn {
   background-size: cover;
   background-position: center;
   border-top-left-radius: 5px;
-  -webkit-box-shadow: 0 0 20px #cacaca;
-  box-shadow: 0 0 20px #cacaca;
+  
   border-bottom-left-radius: 5px;
 }
 
